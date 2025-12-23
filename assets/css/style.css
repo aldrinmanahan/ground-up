@@ -1,0 +1,1674 @@
+* {
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+
+}
+html,
+body {
+    overflow-x: hidden;
+}
+
+strong {
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+}
+
+section,
+#heading {
+    padding: 40px 100px; 
+}
+
+.section-heading {
+    font-family: "Poppins", sans-serif;   
+    font-size: 2rem; /* default font-size for section headings */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.heading-brown {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #A86620;
+}
+
+/* Navbar */
+.logo {
+    height: 60px;
+}
+
+.navbar {
+    padding: 0 90px;
+    background-color: #FFF;
+}
+
+.navbar-nav a {
+    font-family: "Poppins", sans-serif;
+    color: #543310;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    padding: 23px;
+}
+
+.navbar-nav a:hover {
+    color: #A86620 !important;
+}
+
+.navbar-nav .active a {
+    border-bottom: 5px solid #A86620;
+    color: #A86620;
+}
+
+.navbar-toggler-icon img {
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+/* Footer Section */
+#footer-section {
+    background-color: #FAF9F6;
+    padding: 40px 100px 0px;
+    font-size: 0.925rem;
+    line-height: 1.7;
+}
+
+.footer-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-logo {
+    height: 8rem;
+    filter: contrast(3);
+}
+
+.title-brown {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #A86620;
+} 
+
+.footer-text {
+    font-size: 0.875rem;
+    width: 80%;
+}
+
+.footer-contact strong {
+    font-weight: 500;
+}
+
+.footer-contact,
+.link-text {
+    font-size: 0.925rem;
+    margin-bottom: 0.2rem;
+}
+
+.span-brown,
+.social-link {
+    color: #121212;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.span-brown:hover {
+    color: #A86620;
+}
+
+.footer-copyright {
+    font-size: 0.925rem;
+    text-align: right;
+    margin: 0;
+}
+
+.footer-hr {
+    height: 1px;
+    color: #FAF9F6;
+    font-size: 0;
+    border: 0;
+}
+
+.footer-nav a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #121212;
+    font-size: 0.925rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    font-weight: 700;
+    border-left: 4px solid #A86620;
+    padding-left: 5px;
+    color: #A86620 !important;
+    text-decoration: none;
+    text-decoration-color: #A86620 !important;
+}
+
+.footer-nav .active a {
+    font-weight: 700;
+    color: #A86620;
+}
+
+.fa-square-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.fa-square-facebook:hover {
+    color: #1877f2; 
+    transition: 0.3s ease-in-out;
+}
+
+.fa-square-x-twitter:hover {
+    color: #202020;
+    transition: 0.3s ease-in-out;
+}
+
+/* index.html */
+/* Landing Page */
+#landing-page {
+    background: url("../images/homepage.jpeg") center no-repeat;
+    background-size: cover;
+    height: 650px;
+}
+
+#heading {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    max-width: 100%;
+    height: 650px;
+}
+
+.homepage-h1 {
+    font-family: "Poppins", sans-serif;
+    color: #EDEDED;
+    font-size: 2.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem; 
+    text-transform: uppercase;
+    max-width: 50%;
+}
+
+.homepage-h2 {
+    color: #EDEDED;
+    font-size: 1.25rem;
+    letter-spacing: 0.3px;
+    max-width: 45%;
+}
+
+#image-btn {
+    background: #74512D;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+#image-btn:hover {
+    background-color: #543310;
+    color: #EDEDED;
+}
+
+/* Intro Section */
+#intro-section {
+    background-color: #12100E;
+    color: #F0F0F0;
+}
+
+.intro-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8125rem;
+    font-weight: 800;
+    letter-spacing: 0.1rem; 
+    text-transform: uppercase;
+    position: relative;
+}
+
+.homepage-text {
+    font-weight: 500;
+    color: #EDEDED;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
+    width: 90%;
+}   
+
+.intro-side-image {
+    height: auto;
+    filter:saturate(1.2);
+}
+
+/* Services Section */
+#services-section {
+    background: url("../images/services/services-parallax.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: #EDEDED;
+}
+
+.services-card-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+
+.services-text {
+    font-size: 0.950rem;
+    width: 90%;
+    margin: auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.services-card {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.services-card:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px); /* Lifts the card up */
+}
+
+.services-image {
+    height: 5rem;
+}
+
+/* Reviews Section */
+#reviews-section {
+    background-color: #F0EFED;
+}
+
+.reviews-card {
+    border: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.reviews-card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+    background-color: #F0EFED;
+}
+
+.reviews-text {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.850rem;
+    color: #121212;
+}
+
+.reviewer-name {
+    color: #121212;
+    font-weight: 600;
+}
+
+.text-body-secondary {
+    color: #808080;
+}
+
+.star-rating {
+    color: #A86620;
+}
+
+.reviews-image {
+    width: 90px; 
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(84, 51, 16, 0.5);
+}
+
+.blockquote i {
+    color: #543310;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 2%;
+}
+
+/* contact.html */
+/* Intro Banner */
+#about-banner-image,
+#contact-banner-image {
+    background: url("../images/banner-image.jpeg") no-repeat bottom;
+    background-size: cover;
+    height: 17rem;
+    padding: 40px 100px;
+}
+
+#banner-heading {
+    padding: 40px 100px;
+    background-color: #12100E;
+    height: 10rem;
+}
+
+.banner-h1,
+.banner-h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8125rem;
+    font-weight: 700;
+    letter-spacing: 1px; 
+    text-transform: uppercase;
+    position: relative;
+}
+
+.banner-h1 {
+    color: #EDEDED;
+    top: 190px;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.banner-h2 {
+    color: #A86620;
+    bottom: 50px; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.banner-text {
+    font-weight: 500;
+    color: #EDEDED;
+    position: relative;
+    width: 50%;
+    bottom: 3rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);    
+    line-height: 1.6;
+}   
+
+/* Location Section */
+#location-section {
+    background-color: #FEFFFA;
+}
+
+.location-heading {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.location-contact {
+    color: #121212;
+    text-decoration: none;
+    font-size: 0.950rem;
+}
+
+.location-contact strong:hover {
+    color: #A86620;
+}
+
+.location-text {
+    font-size: 0.950rem;
+}
+
+#map-container {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#map-container:hover {
+  transform: translateY(-5px); /* Adds a nice interactive lift */
+}
+
+/* Outro Banner */
+#email-signup-banner {
+    background-color: #12100E;
+    color: #EDEDED;
+    padding: 40px 20px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.email-signup-text {
+    color: #EDEDED;
+}
+
+.banner-email {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    padding: 12px; 
+    width: 250px; 
+    border: none; 
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.banner-btn {
+    background: #74512D;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #FFF;
+}
+
+.banner-btn:hover {
+    background-color: #543310;
+    color: #EDEDED;
+}
+
+/* about.html */
+/* Mission/Vision Section */
+#mission-section {
+    background-color: #EDEDED;
+    height: 245px;
+    overflow: hidden;
+}
+
+.mission-text {
+    line-height: 1.6;
+    width: 90%;
+}
+
+.mission-image {
+    height: 430px;
+    top: -125px;
+    right: -100px;
+}
+
+#vision-section {
+    background-color: #12100E;
+    color: #F0EFED;
+    height: 245px;
+    overflow: hidden;
+}
+
+.vision-text {
+    line-height: 1.6;
+    width: 90%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.vision-image {
+    height: 430px;
+    top: -125px;
+    right: -100px;
+}
+
+/* Intro Banner */
+#about-section {
+    background-color: #FEFFFA;
+    color: #121212;
+}
+
+.about-text {
+    width: 95%;
+    line-height: 1.6;
+}
+
+.about-section-image {
+    height: 22rem;
+    width: 100%; 
+    border-radius: 4px; 
+}
+
+.image-caption {
+  margin-top: 15px;
+  font-size: 0.925rem;
+  font-style: italic;
+  border-left: 3px solid #A86620; /* Adds a nice accent line next to caption */
+  padding-left: 15px;
+}
+
+#insta-section {
+    background-color: #12100E;
+    color: #F0EFED;
+}
+
+.insta-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #F0EFED;
+}
+
+.insta-handle {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #A86620; 
+    transition: color 0.3s ease;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+
+.insta-handle:hover {
+    color: #F0EFED  ; 
+}
+
+#insta-section .heading-brown {
+    text-transform: lowercase;
+}
+
+.insta-item img {
+    height: 300px;
+    width: auto;
+    filter: sepia(20%);
+}
+
+/* Team Section */
+#team-section {
+    background-color: #F0EFED;
+}
+
+.team-card {
+    background-color: #F0EFED;
+    border: none;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 20px;
+    padding: 20px 10px;
+}
+
+.team-card:hover {
+    transform: translateY(5px); /* Lifts the card down */
+    background-color: #F0EFED;
+}
+
+.team-grid {
+    text-align: center;
+}
+
+.team-image {
+    background-color: #A86620;
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: none;
+    filter: saturate(30%);
+}
+
+.team-image:hover {
+    background-color: #F2F2F2;
+    filter: saturate(100%);
+}
+
+.team-member {
+    color: #121212;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.team-role {
+    color: #A86620;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team-bio {
+    font-size: 0.925rem;
+    margin: auto;
+    line-height: 1.6;
+    text-wrap: balance;
+}
+
+.order-tag {
+    background-color: #F2F2F2;
+    border: 1px solid #E0E0E0;  
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.order-tag small {
+    display: block;
+    font-size: 0.825rem;
+    text-transform: uppercase;
+}
+
+.order-tag span {
+    font-size: 0.900rem;
+}
+
+/* Modal */
+.modal-content {
+	-webkit-animation-name: zoomIn;
+    -webkit-animation-duration: 1.5s;
+    animation-name: zoomIn;
+    animation-duration: 1.5s;
+}
+
+.modal-backdrop {
+    opacity:0.9 !important;
+}
+
+.fit-viewport-img {
+  max-height: 90vh; /* Prevents image from being taller than the screen (minus some padding) */
+}
+
+/* menu.html */
+/* Menu Section */
+#menu-section {
+    background-color: #121212;
+    color: #F0EFED;
+}
+
+.menu-brown {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: #A86620;
+}
+
+.menu-subheading {
+    color: #A86620; 
+    font-size: 0.8rem; 
+    font-style: italic; 
+    letter-spacing: 0.5px;
+}
+
+.beverage-size {
+    color: #808080;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-title {
+    color: #F0EFED;
+    font-weight: 700;
+}
+
+.product-text {
+    color: #808080;
+    font-size: .900rem;
+}
+
+.price-text {
+    color: #AF8F6F;
+    font-weight: 600;
+    text-align: end;
+}
+
+.beverage-text {
+    color: #808080;
+    font-size: 0.65rem; 
+    letter-spacing: 1px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+/* Add-On Section */
+#add-on-section {
+    background-color: #12100E; 
+}
+.add-on-title {
+    color: #F0EFED;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.quote-section {
+    padding-left: 30px;
+}
+.quote {
+    padding-left: 20px;
+    border-left: 3px solid #A86620;
+    border-color: #AF8F6F;
+}
+
+.quote-text {
+    color: #F0EFED;
+    font-family: 'Playfair', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.warning-text {
+    color: #808080;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    strong {
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .section-heading,
+    .heading-brown {
+        font-size: 1.25rem; 
+        text-align: center;
+    }
+
+    #heading {
+        padding: 30px 20px;
+        max-width: 100%;
+        height: 260px;
+    }
+
+    /* Navbar */
+    .logo {
+        height: 30px;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    .navbar-nav a {
+        font-weight: 600;
+        font-size: 0.60rem;
+        padding: 2px 12px;
+        text-align: left;
+    }
+
+    .navbar-nav a:hover {
+        font-weight: 700;
+        color: #F0EFED !important;
+        background-color: #AF8F6F;
+        padding: 2px 12px;
+    }
+
+    .navbar-nav .active a {
+        font-weight: 600;
+        color: #F0EFED;
+        background-color: #AF8F6F;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        display: inline;
+    }
+
+    .navbar-toggler-icon img {
+        height: 23px;
+    }
+
+    /* Footer Section */
+    #footer-section {
+        background-color: #FAF9F6;
+        padding: 20px 20px 0px;
+        font-size: 0.925rem;
+        line-height: 1.7;
+    }
+
+    .footer-title {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-brand {
+        margin: -20px 0px;
+    }
+
+    .footer-logo {
+        height: 8rem;
+        transform: rotate(90deg);
+    }
+
+    .title-brown {
+        font-size: 1rem;
+    } 
+
+    .footer-text {
+        font-size: 0.750rem;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-contact {
+        font-size: 0.75rem;
+        margin-bottom: 0.3rem;
+        margin-left: 50px;
+    }
+
+    .link-text {
+        font-size: 0.75rem;
+        margin-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .footer-copyright {
+        font-size: 0.65rem;
+        text-align: center;
+    }
+
+    .footer-nav a {
+        font-size: 0.75rem;
+        letter-spacing: 0.5px;
+    }
+
+    .footer-nav a:hover {
+        font-weight: 700;
+        border-left: 4px solid #A86620;
+        padding-left: 5px;
+        color: #A86620 !important;
+        text-decoration: none;
+        text-decoration-color: #A86620 !important;
+    }
+
+    .footer-nav .active a {
+        font-weight: 700;
+        color: #A86620;
+    }
+
+    /* Landing Page */
+    #landing-page {
+        height: 260px;
+    }
+
+    .homepage-h1 {
+        font-size: 1.6rem;
+        font-weight: 800;
+        letter-spacing: 0rem;
+        max-width: 100%;
+        margin-top: -5px;
+        margin-bottom: 0px;
+    }
+
+    .homepage-h2 {
+        font-size: 0.875rem;
+        width: 80%;
+        font-weight: 500;
+        max-width: 100%;
+        letter-spacing: 0px;
+        margin-bottom: 0px;
+    }
+
+    #image-btn {
+        padding: 8px 13px;
+        font-weight: 500;
+        font-size: 0.675rem;
+    }
+
+    /* Intro Section */
+    #intro-section {
+        background-color: #12100E;
+        color: #F0F0F0;
+        height: 610px;
+    }
+
+    .homepage-text {
+        width: 90%;
+        margin: auto;
+    }   
+
+    .intro-side-image {
+        right: 0px;
+    }
+
+    /* Services Section */
+    #services-section {
+        background: url("../images/services/services-parallax.jpg") no-repeat center fixed;
+        background-size: initial;
+        padding-bottom: 30px;
+    }
+
+    .services-card-heading {
+        font-size: 1rem;
+    }
+
+    .services-text {
+        font-size: 0.850rem;
+        width: 90%;
+        text-wrap: balance;
+    }
+
+    .services-card {
+        padding: 0px;
+    }
+
+    .services-image {
+        height: 4.5rem;
+    }
+
+    /* Reviews Section */
+    .reviews-card {
+        padding: 0px;
+        width: 100%;
+        margin: auto;
+    }
+    .reviews-text,
+    .text-body-secondary {
+        font-size: 0.70rem;
+        text-wrap: balance;
+    }
+
+    .reviewer-name {
+        font-size: 1rem;
+    }
+
+    /* Location Section */
+    /* Intro Banner */
+    #about-banner-image,
+    #contact-banner-image {
+        height: 7rem;
+        padding: 20px;
+    }
+
+    #banner-heading {
+        padding: 20px;
+        background-color: #12100E;
+        height: 9rem;
+    }
+
+    .banner-h1,
+    .banner-h2 {
+        font-size: 1.35rem;
+        letter-spacing: 0px; 
+
+    }
+
+    .banner-h1 {
+        top: 72px;
+    }
+
+    .banner-h2 {
+        bottom: 25px; 
+    }
+
+    .banner-text {
+        width: 100%;
+        bottom: 1rem;
+    }   
+
+    /* Location Section */
+    #location-section {
+        background-color: #FEFFFA;
+    }
+
+    .location-heading {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .location-contact,
+    .location-text {
+        font-size: 0.875rem;
+    }
+
+    .location-contact strong:hover {
+        color: #A86620;
+    }
+
+    #map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    #map-container:hover {
+        transform: translateY(-5px); /* Adds a nice interactive lift */
+    }
+
+    /* Outro Banner */
+    #email-signup-banner {
+        background-color: #12100E;
+        color: #EDEDED;
+        padding: 40px 20px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .email-signup-text {
+        font-size: 0.8rem;
+        color: #EDEDED;
+    }
+
+    .banner-email {
+        font-size: 0.675rem;
+        padding: 8px; 
+        width: 200px; 
+    }
+
+    .banner-btn {
+        padding: 8px 13px;
+        font-size: 0.675rem;
+    }
+
+    .banner-btn:hover {
+        background-color: #543310;
+        color: #EDEDED;
+    }
+
+    /* about.html */
+    /* Mission/Vision Section */
+    #mission-section,
+    #vision-section {
+        height: 230px;
+    }
+
+    .mission-image,
+    .vision-image {
+        height: 0;
+    }
+
+    .mission-text,
+    .vision-text {
+        width: 100%;
+        margin: auto;
+    }
+
+    /* Intro Banner */
+    #about-section {
+        background-color: #FEFFFA;
+        color: #121212;
+    }
+
+    .about-text {
+        width: 95%;
+        line-height: 1.6;
+        margin: 10px auto;
+    }
+
+    .about-section-image {
+        height: auto;
+    }
+
+    .image-caption {
+        font-size: 0.70rem;
+    }
+
+    #insta-section {
+        background-color: #12100E;
+        color: #F0EFED;
+    }
+
+    .insta-title,
+    .insta-handle {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .insta-handle:hover {
+        color: #F0EFED  ; 
+    }
+
+    #insta-section .heading-brown {
+        text-transform: lowercase;
+    }
+
+    .insta-item img {
+        height: 300px;
+        width: auto;
+        filter: sepia(20%);
+    }
+
+    /* Team Section */
+    #team-section {
+        background-color: #F0EFED;
+    }
+
+    .team-card {
+        background-color: #FFF;
+        width: 90%;
+        margin: auto;
+    }
+
+    .team-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .team-image:hover {
+        background-color: #F2F2F2;
+        filter: saturate(100%);
+    }
+
+    .team-member {
+        font-size: 1.1rem;
+    }
+
+    .team-role,
+    .team-bio,
+    .order-tag span {
+        font-size: 0.875rem;
+    }
+
+    .order-tag small {
+        font-size: 0.725rem;
+    }
+
+    /* menu.html */
+    /* Menu Section */
+
+    .menu-brown {
+        font-size: 1.25rem;
+    }
+
+    .menu-subheading {
+        font-size: 0.700rem; 
+    }
+
+    .beverage-size,
+    .beverage-text {
+        font-size: 0.600rem;
+    }
+
+    .product-title {
+        font-size: .850rem;
+    }
+
+    .product-text,
+    .price-text {
+        font-size: 0.800rem;
+    }
+
+    /* Add-On Section */
+    .add-on-title {
+        font-size: .850rem;
+    }
+    
+    .quote-section {
+        padding-left: 15px;
+    }
+
+    .quote {
+        padding-left: 15px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+
+    .warning-text {
+        font-size: 0.70rem;
+    }
+}
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+/* @media (min-width: 576px) and (max-width: 767.98px) { ... } */
+
+/* Medium devices (tablets, 768px and up)*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    p {
+        font-size: 0.875rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+    strong {
+        font-weight: 600;
+    }
+
+    .section-heading,
+    .heading-brown {
+        font-size: 1.45rem; 
+    }
+
+    #heading {
+        padding: 30px;
+        max-width: 100%;
+        height: 450px;
+    }
+
+    /* Navbar */
+    .logo {
+        height: 45px;
+    }
+
+    .navbar {
+        padding: 0px;
+    }
+
+    .navbar-brand {
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+
+    .navbar-nav a {
+        font-size: 0.70rem;
+        padding: 5px 12px;
+        text-align: left;
+    }
+
+    .navbar-nav a:hover {
+        font-weight: 700;
+        color: #F0EFED !important;
+        background-color: #AF8F6F;
+        padding: 5px 12px;
+    }
+
+    .navbar-nav .active a {
+        font-weight: 600;
+        color: #F0EFED;
+        background-color: #AF8F6F;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        display: inline;
+    }
+
+    .navbar-toggler-icon img {
+        height: 30px;
+    }
+
+    /* Footer Section */
+    #footer-section {
+        background-color: #FAF9F6;
+        padding: 20px 20px 0px;
+        font-size: 0.925rem;
+        line-height: 1.7;
+    }
+
+    .footer-title {
+        font-size: 1.15rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-brand {
+        margin: -20px 0px;
+    }
+
+    .footer-logo {
+        height: 8rem;
+        transform: rotate(90deg);
+    }
+
+    .title-brown {
+        font-size: 1.15rem;
+    } 
+
+    .footer-text {
+        font-size: .75rem;
+        width: 36%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .footer-contact {
+        font-size: .875rem;
+        margin-left: 220px;
+    }
+
+    .link-text {
+        font-size: 0.75rem;
+        margin-bottom: 0.3rem;
+        text-align: center;
+    }
+
+    .social-links {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .footer-copyright {
+        font-size: 0.80rem;
+        text-align: center;
+    }
+
+    .footer-nav a {
+        font-size: 0.875rem;
+    }
+
+    /* Landing Page */
+    #landing-page {
+        height: 450px;
+    }
+
+    .homepage-h1 {
+        font-size: 2.5rem;
+        letter-spacing: 0rem;
+        max-width: 65%;
+    }
+
+    .homepage-h2 {
+        font-size: 1rem;
+        width: 50%;
+        max-width: 100%;
+    }
+
+    #image-btn {
+        padding: 8px 13px;
+        font-weight: 500;
+        font-size: 0.675rem;
+    }
+
+    /* Intro Section */
+    #intro-section {
+        background-color: #12100E;
+        color: #F0F0F0;
+    }
+
+    .homepage-text {
+        width: 100%;
+    }   
+
+    .intro-side-image {
+        top: 50px;
+        right: 0px;
+    }
+
+    /* Services Section */
+    .services-card-heading {
+        font-size: .925rem;
+    }
+
+    .services-text {
+        font-size: 0.8rem;
+        width: 90%;
+        text-wrap: balance;
+    }
+
+    .services-card {
+        padding: 0px;
+    }
+
+    .services-image {
+        height: 4.5rem;
+    }
+
+    /* Reviews Section */
+    .reviews-card {
+        padding: 0px;
+        width: 100%;
+        margin: auto;
+    }
+    .reviews-text,
+    .text-body-secondary {
+        font-size: 0.70rem;
+        text-wrap: balance;
+    }
+
+    .reviewer-name {
+        font-size: .875rem;
+    }
+
+    /* Location Section */
+    /* Intro Banner */
+    #about-banner-image,
+    #contact-banner-image {
+        height: 12rem;
+        padding: 20px;
+    }
+
+    #banner-heading {
+        padding: 20px;
+        background-color: #12100E;
+        height: 9rem;
+    }
+
+    .banner-h1,
+    .banner-h2 {
+        font-size: 2.25rem;
+        letter-spacing: 0px; 
+
+    }
+
+    .banner-h1 {
+        top: 137px;
+    }
+
+    .banner-h2 {
+        bottom: 28px; 
+    }
+
+    .banner-text {
+        width: 65%;
+        bottom: 1rem;
+    }   
+
+    /* Location Section */
+    .location-contact,
+    .location-text {
+        font-size: 0.875rem;
+        width: 84%;
+    }
+
+    #map-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 60%;
+        height: 0;
+        overflow: hidden;
+    }
+
+    /* Outro Banner */
+    #email-signup-banner {
+        background-color: #12100E;
+        color: #EDEDED;
+        padding: 40px 20px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .email-signup-text {
+        font-size: 0.8rem;
+        color: #EDEDED;
+    }
+
+    .banner-email {
+        font-size: 0.675rem;
+        padding: 8px; 
+        width: 200px; 
+    }
+
+    .banner-btn {
+        padding: 8px 13px;
+        font-size: 0.675rem;
+    }
+
+    /* about.html */
+    /* Mission/Vision Section */
+    #mission-section,
+    #vision-section {
+        height: 185px;
+    }
+
+    .mission-image {
+        height: 305px;
+        top: -75px;
+        right: -85px;
+    }
+
+    .vision-image {
+        height: 305px;
+        top: -75px;
+        right: -75px;
+    }
+
+    .mission-text,
+    .vision-text {
+        width: 100%;
+        margin: auto;
+        text-wrap: balance;
+    }
+
+    /* Intro Banner */
+    #about-section {
+        background-color: #FEFFFA;
+        color: #121212;
+    }
+
+    .about-text {
+        width: 100%;
+        line-height: 1.6;
+    }
+
+    .about-section-image {
+        height: auto;
+    }
+
+    .image-caption {
+        font-size: 0.825rem;
+    }
+
+    #insta-section {
+        background-color: #12100E;
+        color: #F0EFED;
+    }
+
+    .insta-title,
+    .insta-handle {
+        font-size: 1rem;
+        margin-bottom: 0px;
+    }
+
+    .insta-handle:hover {
+        color: #F0EFED  ; 
+    }
+
+    #insta-section .heading-brown {
+        text-transform: lowercase;
+    }
+
+    .insta-item img {
+        height: 300px;
+        width: auto;
+        filter: sepia(20%);
+    }
+
+    /* Team Section */
+    #team-section {
+        background-color: #F0EFED;
+        text-align: center;
+    }
+
+    .team-card {
+        background-color: #FFF;
+        width: 100%;
+        margin: auto;
+    }
+
+    .team-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .team-image:hover {
+        background-color: #F2F2F2;
+        filter: saturate(100%);
+    }
+
+    .team-member {
+        font-size: 1.1rem;
+    }
+
+    .team-role,
+    .team-bio,
+    .order-tag span {
+        font-size: 0.875rem;
+    }
+
+    .order-tag small {
+        font-size: 0.725rem;
+    }
+
+    /* menu.html */
+    /* Menu Section */
+
+    .menu-brown {
+        font-size: 1.25rem;
+    }
+
+    .menu-subheading {
+        font-size: 0.700rem; 
+    }
+
+    .beverage-size,
+    .beverage-text {
+        font-size: 0.600rem;
+    }
+
+    .product-title {
+        font-size: .850rem;
+    }
+
+    .product-text,
+    .price-text {
+        font-size: 0.800rem;
+    }
+
+    /* Add-On Section */
+    .add-on-title {
+        font-size: .850rem;
+    }
+    
+    .quote-section {
+        padding-left: 15px;
+    }
+
+    .quote {
+        padding-left: 15px;
+    }
+
+    .quote-text {
+        font-size: 1rem;
+    }
+
+    .warning-text {
+        font-size: 0.70rem;
+    }
+}
+
+/* Ipad Pro*/
+/* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) { ... } */
+
+/* Large devices (desktops, 992px and up)*/
+/* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
+
+/* Extra large devices (large desktops, 1200px and up)*/
+/* @media (min-width: 1200px) { ... } */
