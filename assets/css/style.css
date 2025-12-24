@@ -960,6 +960,12 @@ section,
     }
 
     /* Services Section */
+    #services-section {
+        background: url("../images/services/services-parallax.jpg") no-repeat center fixed;
+        background-size: cover;
+        color: #EDEDED;
+    }
+        
     .services-card-heading {
         font-size: 1rem;
     }
