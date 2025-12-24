@@ -2,7 +2,7 @@
     margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: "Overpass", sans-serif;
+    font-family: "Inter", sans-serif;
 
 }
 html,
@@ -16,6 +16,7 @@ strong {
 
 p {
     font-size: 1rem;
+    font-weight: 400;
 }
 
 section,
@@ -106,7 +107,7 @@ section,
 } 
 
 .footer-text {
-    font-size: 0.875rem;
+    font-size: 0.80rem;
     width: 80%;
 }
 
@@ -132,7 +133,7 @@ section,
 }
 
 .footer-copyright {
-    font-size: 0.925rem;
+    font-size: 0.875rem;
     text-align: right;
     margin: 0;
 }
@@ -271,9 +272,9 @@ section,
 }
 
 .services-card-heading {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
-    font-weight: 700;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
 }
@@ -325,7 +326,6 @@ section,
 }
 
 .reviews-text {
-    font-family: "Poppins", sans-serif;
     font-size: 0.850rem;
     color: #121212;
 }
@@ -662,15 +662,15 @@ section,
 
 .order-tag span {
     font-weight: 600;
-    color: #4e342e;
+    color: #4E342E;
     font-size: 0.9rem;
 }
 
 /* Modal */
 .modal-content {
-	-webkit-animation-name: zoomIn;
+	-webkit-animation-name: zoomIn !important;
     -webkit-animation-duration: 1.5s;
-    animation-name: zoomIn;
+    animation-name: zoomIn !important;
     animation-duration: 1.5s;
 }
 
@@ -798,7 +798,7 @@ section,
 
     /* Navbar */
     .logo {
-        height: 30px;
+        height: 35px;
     }
 
     .navbar {
@@ -811,8 +811,8 @@ section,
     }
 
     .navbar-nav a {
-        font-weight: 500;
-        font-size: 0.60rem;
+        font-weight: 600;
+        font-size: 0.75rem;
         padding: 10px 10px;
         text-align: left;
     }
@@ -961,8 +961,8 @@ section,
 
     /* Services Section */
     #services-section {
-        background: url("../images/services/services-parallax.jpg") no-repeat center fixed;
-        background-size: cover;
+        background: url("../images/services/services-parallax.jpg") no-repeat center fixed !important;
+        background-size: cover !important;
         color: #EDEDED;
     }
         
