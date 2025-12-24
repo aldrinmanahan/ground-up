@@ -320,9 +320,8 @@ section,
 }
 
 .reviews-card:hover {
-    transform: translateY(-10px); /* Lifts the card up */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
-    background-color: #F0EFED;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(141, 110, 99, 0.15) !important;
 }
 
 .reviews-text {
@@ -585,21 +584,21 @@ section,
 
 /* Team Section */
 #team-section {
-    background-color: #F0EFED;
+    background-color: #FDFAF7;
 }
 
 .team-card {
     background-color: #F0EFED;
-    border: none;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 20px;
     padding: 20px 10px;
+    border: none !important;
+    border-radius: 15px !important;
+    transition: all 0.3s ease-in-out;
 }
 
 .team-card:hover {
-    transform: translateY(5px); /* Lifts the card down */
-    background-color: #F0EFED;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(141, 110, 99, 0.15) !important;
 }
 
 .team-grid {
@@ -607,56 +606,64 @@ section,
 }
 
 .team-image {
-    background-color: #A86620;
+    background-color: #806C57;
     height: 250px;
     width: 250px;
     border-radius: 20px;
     object-fit: cover;
     border: none;
-    filter: saturate(30%);
+    transition: transform 0.5s ease; 
 }
 
 .team-image:hover {
-    background-color: #F2F2F2;
-    filter: saturate(100%);
+    transform: translateY(5px);
+    box-shadow: 0 15px 35px rgba(141, 110, 99, 0.15) !important;
 }
 
 .team-member {
-    color: #121212;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    color: #121212;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 
 .team-role {
-    color: #A86620;
-    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    color: #A86620; 
+    font-weight: 700;
 }
 
 .team-bio {
     font-size: 0.925rem;
-    margin: auto;
-    line-height: 1.6;
+    color: #6C757D;
     text-wrap: balance;
+    min-height: 75px; /* Keeps the 'Order Tag' aligned horizontally across cards */
 }
 
 .order-tag {
-    background-color: #F2F2F2;
-    border: 1px solid #E0E0E0;  
-    padding: 10px;
-    border-radius: 8px;
+    background-color: #F8F1ED;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 .order-tag small {
     display: block;
-    font-size: 0.825rem;
     text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.7rem;
+    color: #A38B7A;
+    margin-bottom: 3px;
 }
 
 .order-tag span {
-    font-size: 0.900rem;
+    font-weight: 600;
+    color: #4e342e;
+    font-size: 0.9rem;
 }
 
 /* Modal */
@@ -804,17 +811,17 @@ section,
     }
 
     .navbar-nav a {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 0.60rem;
-        padding: 2px 12px;
+        padding: 10px 10px;
         text-align: left;
     }
 
     .navbar-nav a:hover {
-        font-weight: 700;
+        font-weight: 600;
         color: #F0EFED !important;
         background-color: #AF8F6F;
-        padding: 2px 12px;
+        padding: 10px 10px;
     }
 
     .navbar-nav .active a {
@@ -953,12 +960,6 @@ section,
     }
 
     /* Services Section */
-    #services-section {
-        background: url("../images/services/services-parallax.jpg") no-repeat center fixed;
-        background-size: initial;
-        padding-bottom: 30px;
-    }
-
     .services-card-heading {
         font-size: 1rem;
     }
@@ -985,8 +986,7 @@ section,
     }
     .reviews-text,
     .text-body-secondary {
-        font-size: 0.70rem;
-        text-wrap: balance;
+        font-size: 0.65rem;
     }
 
     .reviewer-name {
@@ -1102,8 +1102,9 @@ section,
 
     .mission-text,
     .vision-text {
-        width: 100%;
+        width: 95%;
         margin: auto;
+        text-align: left;
     }
 
     /* Intro Banner */
@@ -1129,6 +1130,7 @@ section,
     #insta-section {
         background-color: #12100E;
         color: #F0EFED;
+        padding: 20px 0px
     }
 
     .insta-title,
@@ -1153,12 +1155,7 @@ section,
     }
 
     /* Team Section */
-    #team-section {
-        background-color: #F0EFED;
-    }
-
     .team-card {
-        background-color: #FFF;
         width: 90%;
         margin: auto;
     }
@@ -1166,11 +1163,6 @@ section,
     .team-image {
         height: 150px;
         width: 150px;
-    }
-
-    .team-image:hover {
-        background-color: #F2F2F2;
-        filter: saturate(100%);
     }
 
     .team-member {
@@ -1315,17 +1307,12 @@ section,
 
     .footer-title {
         font-size: 1.15rem;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .footer-brand {
-        margin: -20px 0px;
+        margin-top: 10px;
     }
 
     .footer-logo {
         height: 8rem;
-        transform: rotate(90deg);
+        transform: rotate(0deg);
     }
 
     .title-brown {
@@ -1333,35 +1320,32 @@ section,
     } 
 
     .footer-text {
-        font-size: .75rem;
-        width: 36%;
+        font-size: 0.650rem;
+        width: 100%;
         margin: auto;
-        text-align: center;
+        margin-top: 10px;
     }
 
     .footer-contact {
-        font-size: .875rem;
-        margin-left: 220px;
+        font-size: .725rem;
     }
 
     .link-text {
         font-size: 0.75rem;
         margin-bottom: 0.3rem;
-        text-align: center;
+        text-align: left;
     }
 
     .social-links {
-        text-align: center;
         font-size: 14px;
     }
 
     .footer-copyright {
         font-size: 0.80rem;
-        text-align: center;
     }
 
     .footer-nav a {
-        font-size: 0.875rem;
+        font-size: 0.800rem;
     }
 
     /* Landing Page */
@@ -1559,6 +1543,8 @@ section,
     #insta-section {
         background-color: #12100E;
         color: #F0EFED;
+        padding: 20px 0px;
+        text-align: center;
     }
 
     .insta-title,
@@ -1583,12 +1569,11 @@ section,
 
     /* Team Section */
     #team-section {
-        background-color: #F0EFED;
         text-align: center;
+        padding: 20px 0px;
     }
 
     .team-card {
-        background-color: #FFF;
         width: 100%;
         margin: auto;
     }
@@ -1598,23 +1583,22 @@ section,
         width: 150px;
     }
 
-    .team-image:hover {
-        background-color: #F2F2F2;
-        filter: saturate(100%);
-    }
-
     .team-member {
         font-size: 1.1rem;
+    }
+
+    .team-bio {
+        min-height: 90px;
     }
 
     .team-role,
     .team-bio,
     .order-tag span {
-        font-size: 0.875rem;
+        font-size: 0.750rem;
     }
 
     .order-tag small {
-        font-size: 0.725rem;
+        font-size: 0.650rem;
     }
 
     /* menu.html */
