@@ -11,7 +11,7 @@ body {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 p {
@@ -25,18 +25,18 @@ section,
 }
 
 .section-heading {
-    font-family: "Poppins", sans-serif;   
+    font-family: "DM Sans", sans-serif;  
     font-size: 2rem; /* default font-size for section headings */
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .heading-brown {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.1px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -88,9 +88,9 @@ section,
 }
 
 .footer-title {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -100,9 +100,9 @@ section,
 }
 
 .title-brown {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 900;
     color: #A86620;
 } 
 
@@ -373,28 +373,27 @@ section,
 #banner-heading {
     padding: 40px 100px;
     background-color: #12100E;
-    height: 10rem;
+    height: 11rem;
 }
 
 .banner-h1,
 .banner-h2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.8125rem;
-    font-weight: 700;
-    letter-spacing: 1px; 
+    font-family: "DM Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
     text-transform: uppercase;
     position: relative;
 }
 
 .banner-h1 {
     color: #EDEDED;
-    top: 190px;  
+    top: 188px;  
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .banner-h2 {
     color: #A86620;
-    bottom: 50px; 
+    bottom: 49px; 
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -402,10 +401,10 @@ section,
     font-weight: 500;
     color: #EDEDED;
     position: relative;
-    width: 50%;
+    width: 60%;
     bottom: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);    
-    line-height: 1.6;
+    line-height: 1.7;
 }   
 
 /* Location Section */
@@ -414,9 +413,9 @@ section,
 }
 
 .location-heading {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -690,9 +689,9 @@ section,
 }
 
 .menu-brown {
-    font-family: "Poppins", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -708,15 +707,15 @@ section,
 
 .beverage-size {
     color: #808080;
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 .product-title {
     color: #F0EFED;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .product-text {
@@ -726,7 +725,7 @@ section,
 
 .price-text {
     color: #AF8F6F;
-    font-weight: 600;
+    font-weight: 500;
     text-align: end;
 }
 
@@ -734,7 +733,6 @@ section,
     color: #808080;
     font-size: 0.65rem; 
     letter-spacing: 1px;
-    padding-bottom: 0px;
     text-transform: uppercase;
 }
 /* Add-On Section */
@@ -743,7 +741,7 @@ section,
 }
 .add-on-title {
     color: #F0EFED;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -766,7 +764,7 @@ section,
 
 .warning-text {
     color: #808080;
-    font-size: 0.75rem;
+    font-size: 0.80rem;
     text-transform: uppercase;
 }
 
@@ -781,7 +779,7 @@ section,
     }
 
     section {
-        padding: 20px;
+        padding: 20px 0px;
     }
 
     .section-heading,
@@ -791,7 +789,7 @@ section,
     }
 
     #heading {
-        padding: 30px 20px;
+        padding: 30px 10px;
         max-width: 100%;
         height: 260px;
     }
@@ -805,15 +803,10 @@ section,
         padding: 0px;
     }
 
-    .navbar-brand {
-        padding-top: 5px;
-        padding-left: 10px;
-    }
-
     .navbar-nav a {
         font-weight: 600;
-        font-size: 0.75rem;
-        padding: 10px 10px;
+        font-size: 0.85rem;
+        padding: 10px;
         text-align: left;
     }
 
@@ -842,15 +835,15 @@ section,
     /* Footer Section */
     #footer-section {
         background-color: #FAF9F6;
-        padding: 20px 20px 0px;
+        padding: 20px 0px 0px;
         font-size: 0.925rem;
         line-height: 1.7;
     }
 
     .footer-title {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 1.25rem;
         margin-top: 20px;
+        text-align: center;
     }
 
     .footer-brand {
@@ -863,20 +856,19 @@ section,
     }
 
     .title-brown {
-        font-size: 1rem;
+        font-size: 1.25rem;
     } 
 
     .footer-text {
-        font-size: 0.750rem;
-        width: 80%;
+        font-size: 0.8rem;
         margin: auto;
         text-align: center;
     }
 
     .footer-contact {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         margin-bottom: 0.3rem;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .link-text {
@@ -887,16 +879,16 @@ section,
 
     .social-links {
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .footer-copyright {
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         text-align: center;
     }
 
     .footer-nav a {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
 
@@ -930,7 +922,7 @@ section,
 
     .homepage-h2 {
         font-size: 0.875rem;
-        width: 80%;
+        width: 90%;
         font-weight: 500;
         max-width: 100%;
         letter-spacing: 0px;
@@ -950,9 +942,13 @@ section,
         height: 610px;
     }
 
-    .homepage-text {
+    #homepage-heading {
         width: 90%;
         margin: auto;
+    }
+
+    .homepage-text {
+        width: 100%;
     }   
 
     .intro-side-image {
@@ -971,8 +967,8 @@ section,
     }
 
     .services-text {
-        font-size: 0.850rem;
-        width: 90%;
+        font-size: 0.825rem;
+        width: 100%;
         text-wrap: balance;
     }
 
@@ -992,7 +988,7 @@ section,
     }
     .reviews-text,
     .text-body-secondary {
-        font-size: 0.65rem;
+        font-size: 0.7rem;
     }
 
     .reviewer-name {
@@ -1004,11 +1000,11 @@ section,
     #about-banner-image,
     #contact-banner-image {
         height: 7rem;
-        padding: 20px;
+        padding: 10px
     }
 
     #banner-heading {
-        padding: 20px;
+        padding: 10px;
         background-color: #12100E;
         height: 9rem;
     }
@@ -1021,14 +1017,15 @@ section,
     }
 
     .banner-h1 {
-        top: 72px;
+        top: 82px;
     }
 
     .banner-h2 {
-        bottom: 25px; 
+        bottom: 13px; 
     }
 
     .banner-text {
+        font-size: 0.875rem;
         width: 100%;
         bottom: 1rem;
     }   
@@ -1068,13 +1065,13 @@ section,
     #email-signup-banner {
         background-color: #12100E;
         color: #EDEDED;
-        padding: 40px 20px;
+        padding: 20px 0px;
         text-align: center;
         line-height: 1.7;
     }
 
     .email-signup-text {
-        font-size: 0.8rem;
+        font-size: 0.750rem;
         color: #EDEDED;
     }
 
@@ -1108,9 +1105,8 @@ section,
 
     .mission-text,
     .vision-text {
-        width: 95%;
-        margin: auto;
-        text-align: left;
+        width: 100%;
+        line-height: 1.7;
     }
 
     /* Intro Banner */
@@ -1120,8 +1116,8 @@ section,
     }
 
     .about-text {
-        width: 95%;
-        line-height: 1.6;
+        width: 100%;
+        line-height: 1.7;
         margin: 10px auto;
     }
 
@@ -1189,7 +1185,7 @@ section,
     /* Menu Section */
 
     .menu-brown {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .menu-subheading {
@@ -1224,11 +1220,11 @@ section,
     }
 
     .quote-text {
-        font-size: 1rem;
+        font-size: .875rem;
     }
 
     .warning-text {
-        font-size: 0.70rem;
+        font-size: 0.6rem;
     }
 }
 
@@ -1276,8 +1272,8 @@ section,
     }
 
     .navbar-nav a {
-        font-size: 0.70rem;
-        padding: 5px 12px;
+        font-size: 0.850rem;
+        padding: 10px 10px;
         text-align: left;
     }
 
@@ -1285,7 +1281,7 @@ section,
         font-weight: 700;
         color: #F0EFED !important;
         background-color: #AF8F6F;
-        padding: 5px 12px;
+        padding: 10px 10px;
     }
 
     .navbar-nav .active a {
@@ -1394,12 +1390,12 @@ section,
 
     /* Services Section */
     .services-card-heading {
-        font-size: .925rem;
+        font-size: .950rem;
     }
 
     .services-text {
         font-size: 0.8rem;
-        width: 90%;
+        width: 100%;
         text-wrap: balance;
     }
 
