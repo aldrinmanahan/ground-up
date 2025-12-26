@@ -1272,7 +1272,7 @@ section,
         display: block;
         font-size: 0.8rem;
         text-wrap: balance;
-        padding: 0px;
+        padding: 0px 5px;
     }
 
     .team-card::before {
@@ -1775,7 +1775,16 @@ section,
 }
 
 /* Ipad Pro*/
-/* @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) { ... } */
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) { 
+    /* Team Section */
+    .team-card {
+        height: 40vh;
+    }
+    #mission-section, #vision-section {
+        height: 200px;
+        padding: 30px 100px;
+    }
+}
 
 /* Large devices (desktops, 992px and up)*/
 /* @media (min-width: 992px) and (max-width: 1199.98px) { ... } */
