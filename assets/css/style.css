@@ -591,14 +591,10 @@ section,
     text-align: center;
     padding: 20px 10px;
     border: none !important;
-    border-radius: 15px !important;
+    /* border-radius: 15px !important; */
     transition: all 0.3s ease-in-out;
 }
 
-.team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 35px rgba(141, 110, 99, 0.15) !important;
-}
 
 .team-grid {
     text-align: center;
@@ -673,12 +669,19 @@ section,
     animation-duration: 1.5s;
 }
 
+.animate-zoom {
+    animation: zoomIn 1.5s ease;
+    -webkit-animation: zoomIn 1.5s ease;
+}
+
 .modal-backdrop {
     opacity:0.9 !important;
 }
 
 .fit-viewport-img {
-  max-height: 90vh; /* Prevents image from being taller than the screen (minus some padding) */
+    max-height: 90vh; /* Prevents image from being taller than the screen (minus some padding) */
+    width: auto;
+    object-fit: contain;
 }
 
 /* menu.html */
@@ -863,6 +866,7 @@ section,
         font-size: 0.8rem;
         margin: auto;
         text-align: center;
+        width: 95%;
     }
 
     .footer-contact {
@@ -957,8 +961,8 @@ section,
 
     /* Services Section */
     #services-section {
-        background: url("../images/services/services-parallax.jpg") no-repeat center fixed !important;
-        background-size: cover !important;
+        background: url("../images/services/services-parallax.jpg") no-repeat center;
+        background-size: cover;
         color: #EDEDED;
     }
         
@@ -1073,6 +1077,9 @@ section,
     .email-signup-text {
         font-size: 0.750rem;
         color: #EDEDED;
+        width: 75%;
+        margin: auto;
+        margin-bottom: 10px;
     }
 
     .banner-email {
@@ -1126,7 +1133,7 @@ section,
     }
 
     .image-caption {
-        font-size: 0.70rem;
+        font-size: 0.75rem;
     }
 
     #insta-section {

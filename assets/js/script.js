@@ -12,5 +12,16 @@ if (imageModal) {
         if (modalImage) {
             modalImage.src = imageSrc;
         }
+        
+        if (modalContent) {
+            // 1. Remove the animation class
+            modalContent.classList.remove('animate-zoom');
+
+            // 2. Trigger "reflow" (this is the magic trick)
+            void modalContent.offsetWidth;
+
+            // 3. Add the animation class back
+            modalContent.classList.add('animate-zoom');
+        }
     });
 }
