@@ -721,11 +721,6 @@ section,
     animation-duration: 1.5s;
 }
 
-.animate-zoom {
-    animation: zoomIn 1.5s ease;
-    -webkit-animation: zoomIn 1.5s ease;
-}
-
 .modal-backdrop {
     opacity:0.9 !important;
 }
@@ -1238,10 +1233,17 @@ section,
 
     .member-role {
         font-size: 0.875rem;
+        text-shadow: none;
     }
 
     .member-name {
-        font-size: 3rem;
+        font-size: 3.5rem;
+        text-shadow: none;
+    }
+
+    .team-card:hover .member-name,
+    .team-card:hover .member-role {
+        top: -1rem;
     }
 
     .member-bio {
@@ -1249,11 +1251,11 @@ section,
     }
 
     .team-card:hover .member-name {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .team-card:hover .member-role {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .team-card:hover .member-bio {
