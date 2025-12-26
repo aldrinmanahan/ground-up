@@ -400,7 +400,7 @@ section,
     font-weight: 500;
     color: #EDEDED;
     position: relative;
-    width: 60%;
+    width: 50%;
     bottom: 3rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);    
     line-height: 1.7;
@@ -590,6 +590,7 @@ section,
     background-color: #FEFFFA;
     padding: 20px;
     text-align: center;
+    align-items: center
 }
 
 .team-wrapper {
@@ -611,7 +612,7 @@ section,
 }
 
 .card-one { 
-    background-color: #A08963; 
+    background-color: #8F6034; 
 }
 .card-two { 
     background-color: #7B542F; 
@@ -637,22 +638,23 @@ section,
 }
 
 .member-name {
-    font-family: "Pacifico", cursive;
-    color: #EDEDED;
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 0.1rem; 
+    font-family: "Caveat Brush", cursive;
+    color: #F8F4E1;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .member-role {
     font-family: "Montserrat", sans-serif;
-    color: #EDEDED;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.5px; 
+    color: #F8F4E1;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
 }
 
 .member-bio {
@@ -662,7 +664,7 @@ section,
     width: 100%;
     margin: auto;
     padding: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 /* The Image Zoom Logic */
@@ -685,11 +687,12 @@ section,
 }
 
 .team-card:hover .member-name {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
 }
 
 .team-card:hover .member-role {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    opacity: 0.9;
 }
 
 .team-card:hover .member-bio {
@@ -1233,6 +1236,10 @@ section,
         transform: scale(1.3);
     }
 
+    .member-role {
+        font-size: 0.875rem;
+    }
+
     .member-name {
         font-size: 3rem;
     }
@@ -1246,7 +1253,7 @@ section,
     }
 
     .team-card:hover .member-role {
-        font-size: .875rem;
+        font-size: 0.7rem;
     }
 
     .team-card:hover .member-bio {
@@ -1701,7 +1708,7 @@ section,
     }
 
     .team-card:hover .member-role {
-        font-size: 1.25rem;
+        font-size: .875rem;
     }
 
     .team-card:hover .member-bio {
