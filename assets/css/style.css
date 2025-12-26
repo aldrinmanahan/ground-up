@@ -1238,12 +1238,14 @@ section,
     }
 
     .member-name {
-        font-size: 3.5rem;
+        font-size: 3.75rem;
         text-shadow: none;
+        letter-spacing: 0px;
     }
 
     .team-card:hover .member-name,
-    .team-card:hover .member-role {
+    .team-card:hover .member-role, 
+    .team-card:hover .member-bio {
         top: -1rem;
     }
 
@@ -1253,6 +1255,7 @@ section,
 
     .team-card:hover .member-name {
         font-size: 3rem;
+        letter-spacing: 0px;
     }
 
     .team-card:hover .member-role {
@@ -1261,9 +1264,9 @@ section,
 
     .team-card:hover .member-bio {
         display: block;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-wrap: balance;
-        padding: 0;
+        padding: 5px;
     }
 
     .team-card::before {
