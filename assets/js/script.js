@@ -8,11 +8,13 @@ if (imageModal) {
         const imageSrc = button.getAttribute('data-bs-img');
         // Update the modal's image source
         const modalImage = imageModal.querySelector('#modalImage');
-
+        // Target the modal content container
+        const modalContent = imageModal.querySelector('.modal-content');
+        
         if (modalImage) {
             modalImage.src = imageSrc;
         }
-        
+
         if (modalContent) {
             // 1. Remove the animation class
             modalContent.classList.remove('animate-zoom');
