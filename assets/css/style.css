@@ -1779,8 +1779,8 @@ section,
     /* about.html */
     /* Mission/Vision Section */
     #mission-section, #vision-section {
-        height: 200px;
-        padding: 30px 100px;
+        height: auto;
+        padding: 30px 70px;
     }
 
     /* Team Section */
