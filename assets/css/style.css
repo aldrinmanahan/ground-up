@@ -292,6 +292,7 @@ section,
     border-radius: 20px;
     padding: 25px;
     text-align: center;
+    max-width: 350px;
 }
 
 .services-card:hover {
@@ -317,6 +318,7 @@ section,
     background-color: #FFF;
     border-radius: 20px;
     padding: 10px;
+    max-width: 350px;
 }
 
 .reviews-card:hover {
