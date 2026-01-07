@@ -8,6 +8,7 @@
 html,
 body {
     overflow-x: hidden;
+    padding-top: 35px;
 }
 
 strong {
@@ -51,6 +52,12 @@ section,
 .navbar {
     padding: 0 90px;
     background-color: #FFF;
+    position: fixed;
+    top: 0; /* Positions it at the top of the viewport */
+    left: 0; /* Aligns to the left edge */
+    right: 0; /* Aligns to the right edge */
+    z-index: 1000; /* Keeps it on top of other content */
+    width: 100%;
 }
 
 .navbar-nav a {
@@ -823,6 +830,9 @@ section,
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
+    html, body {
+        padding-top: 23px;
+    }
     strong {
         font-weight: 600;
     }
@@ -1350,6 +1360,9 @@ section,
 
 /* Medium devices (tablets, 768px and up)*/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+    html, body {
+        padding-top: 25px;
+    }
     p {
         font-size: 0.875rem;
     }
